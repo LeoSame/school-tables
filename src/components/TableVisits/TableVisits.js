@@ -2,11 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { getColumnSelector, getIsLoadingSelector, getRateSelector, getSchoolboySelector } from '../../store/selectors';
 import { columnsForMaterial, rowsForMaterial } from '../../utils/helper';
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Table from '@material-ui/core/Table';
-import TableContainer from '@material-ui/core/TableContainer';
-import { CircularProgress } from '@material-ui/core';
+import { CircularProgress, Paper, Table, TableContainer, makeStyles } from '@material-ui/core';
 import HeadTable from '../HeadTable/HeadTable';
 import BodyTable from '../BodyTable/BodyTable';
 
@@ -16,7 +12,7 @@ const useStyles = makeStyles({
     margin: '0 auto',
   },
   container: {
-    height: '100vh',
+    height: 'calc(100vh - 50px)',
   },
 });
 
@@ -30,7 +26,7 @@ const TableVisits = () => {
   if (isLoading) {
     return (
       <div className='loader__fixed'>
-        <CircularProgress disableShrink />
+        <CircularProgress />
       </div>
     );
   }
@@ -39,7 +35,6 @@ const TableVisits = () => {
 
   const rows = rowsForMaterial(schoolBoy, rate);
 
-  console.log(rows);
   return (
     <Paper className={classes.root}>
       <TableContainer className={classes.container}>

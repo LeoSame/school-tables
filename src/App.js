@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getTableDataOperation } from './store/operations';
-import TableVisits from './components/TableVisits/TableVisits';
+import Navbar from './components/Navbar/Navbar';
+import AppRoutes from './routes/AppRoutes';
 import './App.css';
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
 
   return (
     <div className='App'>
-      <TableVisits />
+      <Navbar />
+      <AppRoutes />
     </div>
   );
 }

@@ -1,0 +1,9 @@
+.navbar {
+  height: 36px;
+  margin: 7px 0;
+  text-align: center;
+}
+
+.navbar__link {
+  margin: 0 10px;
+}
