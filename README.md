@@ -4,6 +4,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The Material UI style library was used to style the project.
 
+All functions with requests are in the http folder
+
+## Connecting npm packages:
+
+1. @material-ui/core
+2. axios
+3. react-redux
+4. react-router-dom
+5. redux
+6. redux-thunk
+
 ## Available Scripts
 
 In the project directory, you can run:
