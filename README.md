@@ -6,7 +6,7 @@ The Material UI style library was used to style the project.
 
 All functions with requests are in the http folder
 
-# Please, if there is a comment, give feedback
+### Please, if there is a comment, give feedback
 
 ## Connecting npm packages:
 
